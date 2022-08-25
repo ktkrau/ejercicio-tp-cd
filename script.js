@@ -36,3 +36,6 @@ function cambiaImagen(elemento_img){
         elemento_img.src = "img/map-marker.png"
     }
 }
+function elimine(elemento_p){
+    elemento_p.remove(); // elimina elemento al que estamos haciendo doble click
+}
