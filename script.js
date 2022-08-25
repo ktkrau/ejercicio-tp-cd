@@ -28,5 +28,11 @@ function cambieNombre(elemento_h1){ // recibimos el elemento h1
    // elemento_h1.innerText = "Juana de Arco"; 
 }
 function cambiaImagen(elemento_img){
-    elemento_img.src = "img/gear.png"
+    /* elemento_img.src = "img/gear.png" */
+    console.log(elemento_img.src)
+    if(elemento_img.src.includes('img/map-marker.png')){
+        elemento_img.src =  "img/gear.png"
+    }else{
+        elemento_img.src = "img/map-marker.png"
+    }
 }
